@@ -1,7 +1,7 @@
 import React from "react";
 import { caretDown, phoneSvg } from "@/app/base/SVG";
 import Faq from "./Faq";
-
+import Colors from "./Colors";
 
 export default function Side() {
   return (
@@ -30,46 +30,7 @@ export default function Side() {
         * Bereikbaar op werkdagen van 09:00 tot 18:00 <br />
         voor een geheel vrijblijvend orienterend gesprek.
       </div>
-      <div className="side__colors">
-        <div className="side__colors-title">
-          <h3 className="sm">
-            Betonvloer designer <span>TM</span>
-          </h3>
-          <h6>Ontwerp uw eigen betonvloer</h6>
-        </div>
-        <div className="side__colors-items">
-          <div className="side__colors-item">
-            <div className="side__colors-item-image">
-              <img src="images/colors/1.png" alt="" />
-            </div>
-          </div>
-          <div className="side__colors-item">
-            <div className="side__colors-item-image">
-              <img src="images/colors/2.png" alt="" />
-            </div>
-          </div>
-          <div className="side__colors-item">
-            <div className="side__colors-item-image">
-              <img src="images/colors/3.png" alt="" />
-            </div>
-          </div>
-          <div className="side__colors-item">
-            <div className="side__colors-item-image">
-              <img src="images/colors/4.png" alt="" />
-            </div>
-          </div>
-          <div className="side__colors-item">
-            <div className="side__colors-item-image">
-              <img src="images/colors/5.png" alt="" />
-            </div>
-          </div>
-          <div className="side__colors-item">
-            <div className="side__colors-item-image">
-              <img src="images/colors/6.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <Colors />
     </div>
   );
 }
