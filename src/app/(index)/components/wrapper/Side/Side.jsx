@@ -1,7 +1,7 @@
 import React from "react";
-import { caretDown, phoneSvg } from "@/app/base/SVG";
-import Faq from "./Faq";
-import Colors from "./Colors";
+import { phoneSvg } from "@/app/base/SVG";
+import Colors from "./components/Colors";
+import Faq from "./components/Faq";
 
 export default function Side() {
   return (

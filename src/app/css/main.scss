@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @import "./fonts/stylesheet.css";
 // 1-main components
 @import "./components/1-main/variables.scss";
@@ -12,6 +11,8 @@
 @import "./components/2-layout/widgets.scss";
 @import "./components/2-layout/faq.scss";
 @import "./components/2-layout/detail.scss";
+@import "./components/2-layout/slick-theme.scss";
+@import "./components/2-layout/slick.scss";
 // 3-pages components
 @import "./components/3-pages/index.scss";
 
