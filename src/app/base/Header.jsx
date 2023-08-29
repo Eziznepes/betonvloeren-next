@@ -1,5 +1,6 @@
-import React from "react";
-import { caretDown, chevronRight, mailSvg, phoneSvg } from "./SVG";
+"use client";
+import { mailSvg, phoneSvg } from "./SVG";
+import Nav from "./nav/Nav";
 
 export default function Header() {
   return (
@@ -33,105 +34,7 @@ export default function Header() {
             <a href="index.html" className="headerBot__inner-logo">
               <img src="images/logo.png" alt="" />
             </a>
-            <nav className="nav">
-              <div className="nav__inner">
-                <div className="nav__inner-dropdown">
-                  <div className="nav__inner-dropdown-title">
-                    Betonvloeren
-                    {caretDown}
-                  </div>
-                  <div className="nav__inner-dropdown-content">
-                    <a href="#" className="nav__inner-dropdown-item">
-                      <div className="nav__inner-dropdown-item-image">
-                        <img src="images/nav/1.jpg" alt="" />
-                      </div>
-                      <div className="nav__inner-dropdown-item-content">
-                        <div className="nav__inner-dropdown-item-content-title">
-                          <h4>Beton cire</h4>
-                        </div>
-                        <p>
-                          Beton cire is een prachtige techniek om uw woning of
-                          bedrijfsruimte een stoer en robuist uiterlijk te
-                          geven.
-                        </p>
-                      </div>
-                      {chevronRight}
-                    </a>
-                    <a href="#" className="nav__inner-dropdown-item topSell">
-                      <div className="nav__inner-dropdown-item-image">
-                        <img src="images/nav/2.jpg" alt="" />
-                      </div>
-                      <div className="nav__inner-dropdown-item-content">
-                        <div className="nav__inner-dropdown-item-content-title">
-                          <h4>Gietvloer beton</h4>
-                          <div className="nav__inner-dropdown-item-content-tag">
-                            meest verkocht
-                          </div>
-                        </div>
-                        <p>
-                          Beton cire is een prachtige techniek om uw woning of
-                          bedrijfsruimte een stoer en robuist uiterlijk te
-                          geven.
-                        </p>
-                      </div>
-                      {chevronRight}
-                    </a>
-                  </div>
-                </div>
-                <div className="nav__inner-dropdown">
-                  <div className="nav__inner-dropdown-title">
-                    Betonvloeren afwerking
-                    {caretDown}
-                  </div>
-                  <div className="nav__inner-dropdown-content">
-                    <a href="#" className="nav__inner-dropdown-item">
-                      <div className="nav__inner-dropdown-item-image">
-                        <img src="images/nav/1.jpg" alt="" />
-                      </div>
-                      <div className="nav__inner-dropdown-item-content">
-                        <div className="nav__inner-dropdown-item-content-title">
-                          <h4>Beton cire</h4>
-                        </div>
-                        <p>
-                          Beton cire is een prachtige techniek om uw woning of
-                          bedrijfsruimte een stoer en robuist uiterlijk te
-                          geven.
-                        </p>
-                      </div>
-                      {chevronRight}
-                    </a>
-                    <a href="#" className="nav__inner-dropdown-item topSell">
-                      <div className="nav__inner-dropdown-item-image">
-                        <img src="images/nav/2.jpg" alt="" />
-                      </div>
-                      <div className="nav__inner-dropdown-item-content">
-                        <div className="nav__inner-dropdown-item-content-title">
-                          <h4>Gietvloer beton</h4>
-                          <div className="nav__inner-dropdown-item-content-tag">
-                            meest verkocht
-                          </div>
-                        </div>
-                        <p>
-                          Beton cire is een prachtige techniek om uw woning of
-                          bedrijfsruimte een stoer en robuist uiterlijk te
-                          geven.
-                        </p>
-                      </div>
-                      {chevronRight}
-                    </a>
-                  </div>
-                </div>
-                <a href="#" className="nav__inner-link">
-                  Betonvloeren prijs
-                </a>
-                <a href="#" className="nav__inner-link">
-                  Foto’s
-                </a>
-                <a href="#" className="nav__inner-link">
-                  Contact
-                </a>
-              </div>
-            </nav>
+            <Nav />
             <button type="button" className="button primary">
               Offerte aanvragen
             </button>
