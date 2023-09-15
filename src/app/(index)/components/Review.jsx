@@ -5,7 +5,7 @@ const ReviewList = [
   {
     id: "1",
     avatar: "images/avatars/1.png",
-    review: <>"Uitstekend geholpen bij het aanbrengen van een betonvloer. "</>,
+    review: <>"Uitstekend geholpen bij het aanbrengen van een betonvloer."</>,
     review_count: "5",
     name: "Angelo White",
     stars: "5",
@@ -23,7 +23,7 @@ const ReviewList = [
   {
     id: "3",
     avatar: "images/avatars/2.png",
-    review: <>"Uitstekend geholpen van een betonvloer. "</>,
+    review: <>"Uitstekend geholpen van een betonvloer."</>,
     review_count: "5",
     name: "Angelo White",
     stars: "1",
@@ -31,7 +31,7 @@ const ReviewList = [
   {
     id: "4",
     avatar: "images/avatars/1.png",
-    review: <>""Ben erg tevreden met mijn betonlook. "</>,
+    review: <>"Ben erg tevreden met mijn betonlook."</>,
     review_count: "5",
     name: "Rafael H",
     stars: "15",
