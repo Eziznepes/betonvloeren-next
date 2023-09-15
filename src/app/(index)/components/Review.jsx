@@ -5,7 +5,7 @@ const ReviewList = [
   {
     id: "1",
     avatar: "images/avatars/1.png",
-    review: <>"Uitstekend geholpen bij het aanbrengen van een betonvloer."</>,
+    review: <>&quot;Uitstekend geholpen bij het aanbrengen van een betonvloer.&quot;</>,
     review_count: "5",
     name: "Angelo White",
     stars: "5",
@@ -14,7 +14,7 @@ const ReviewList = [
     id: "2",
     avatar: "images/avatars/2.png",
     review: (
-      <>"Ben erg tevreden met mijn betonlook gietvloer in de woonkamer"</>
+      <>&quot;Ben erg tevreden met mijn betonlook gietvloer in de woonkamer&quot;</>
     ),
     review_count: "5",
     name: "Rafael H",
@@ -23,7 +23,7 @@ const ReviewList = [
   {
     id: "3",
     avatar: "images/avatars/2.png",
-    review: <>"Uitstekend geholpen van een betonvloer."</>,
+    review: <>&quot;Uitstekend geholpen van een betonvloer.&quot;</>,
     review_count: "5",
     name: "Angelo White",
     stars: "1",
@@ -31,7 +31,7 @@ const ReviewList = [
   {
     id: "4",
     avatar: "images/avatars/1.png",
-    review: <>"Ben erg tevreden met mijn betonlook."</>,
+    review: <>&quot;Ben erg tevreden met mijn betonlook.&quot;</>,
     review_count: "5",
     name: "Rafael H",
     stars: "15",
@@ -84,7 +84,8 @@ const ReviewItem = ({ itemData }) => {
       <div className="review__item-content">
         <p className="extrasm">{itemData.review}</p>
         <div className="review__item-body">
-          <h5 className="bold">{itemData.name}</h5>
+          <h5 className="bold">{itemData.name}
+          </h5>
           <div className="review__item-row">
             <h5 className="sm">
               {itemData.review_count}{" "}
