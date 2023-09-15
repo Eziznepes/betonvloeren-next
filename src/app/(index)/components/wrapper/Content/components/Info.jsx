@@ -21,7 +21,7 @@ const infoList = [
 
 export default function Info() {
   return (
-    <div className="content__info">
+    <div className="wrap__content-info">
       {infoList.map((item, index) => {
         return <InfoItem itemData={item} key={index} />;
       })}
@@ -30,16 +30,18 @@ export default function Info() {
 }
 const InfoItem = ({ itemData }) => {
   return (
-    <a href="#" className="content__info-item">
-      <div className="content__info-item-image">
+    <div className="wrap__content-info-item">
+      <div className="wrap__content-info-item-image">
         <img src={itemData.image} alt="" />
-        <h4>
-          Alles over <span>{itemData.title}</span>
-        </h4>
+        <a href="#">
+          <h4>
+            Alles over <span>{itemData.title}</span>
+          </h4>
+        </a>
       </div>
       {itemData.tag && (
-        <div className="content__info-item-tag">{itemData.tag}</div>
+        <div className="wrap__content-info-item-tag">{itemData.tag}</div>
       )}
-    </a>
+    </div>
   );
 };

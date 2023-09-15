@@ -47,10 +47,9 @@ export default function Review() {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 840,
         settings: {
-          slidesToShow: 3,
-          arrows: false,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -84,16 +83,16 @@ const ReviewItem = ({ itemData }) => {
       </div>
       <div className="review__item-content">
         <p className="extrasm">{itemData.review}</p>
-        <div className="review__item-row">
-          <div className="review__item-info">
-            <h5 className="bold">{itemData.name}</h5>
+        <div className="review__item-body">
+          <h5 className="bold">{itemData.name}</h5>
+          <div className="review__item-row">
             <h5 className="sm">
               {itemData.review_count}{" "}
               {parseInt(itemData.review_count) > 1 ? "Reviews" : "Review"}
             </h5>
-          </div>
-          <div className="stars">
-            <img src="images/stars.png" alt="" />
+            <div className="stars">
+              <img src="images/stars.png" alt="" />
+            </div>
           </div>
         </div>
       </div>

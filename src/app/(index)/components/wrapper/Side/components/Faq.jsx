@@ -72,7 +72,7 @@ const FaqItem = ({ itemData, isActive, setIsActive }) => {
         {caretDown}
       </div>
       <div className="faq__content">
-        <p className="big">{itemData.description}</p>
+        <a href="#">{itemData.description}</a>
       </div>
     </div>
   );

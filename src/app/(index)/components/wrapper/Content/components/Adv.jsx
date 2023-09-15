@@ -56,7 +56,7 @@ export default function Adv() {
     <div className="content__adv">
       <div className="content__adv-title">
         <h2>De voordelen van betonvloeren</h2>
-        {checkSvg}
+        <img src="images/icons/tick.png" alt="" />
       </div>
       <p className="extra">
         Betonvloeren zijn naadloze, slijtvaste en duurzame vloeren met een

@@ -26,7 +26,17 @@
   &__content {
     display: none;
     animation: appear 0.3s ease-in-out;
-    p {
+    a {
+      @include transition;
+      &:hover {
+        opacity: 0.8;
+      }
+      display: block;
+      color: $textColor;
+      font-family: $mainFont;
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 400;
       margin-bottom: 10px;
     }
   }

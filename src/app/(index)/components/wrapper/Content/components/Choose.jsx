@@ -71,7 +71,7 @@ const ChooseItem = ({ itemData }) => {
       </div>
       <div className="content__choose-item-content">
         <h3 className="sm">{itemData.title}</h3>
-        <p className="extra">{itemData.desc}</p>
+        <p className="xbig">{itemData.desc}</p>
       </div>
     </div>
   );

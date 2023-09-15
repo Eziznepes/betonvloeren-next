@@ -13,10 +13,9 @@ const DetailLIst = [
     subtitle: "Wat is betoncire",
     desc2: (
       <>
-        <strong>Beton cire</strong> is een type
-        <a href="#">betonvloer</a> met een unieke en natuurlijke uitstraling.
-        Het is een dunne laag betonstuc die ambachtelijk wordt aangebracht op
-        verschillende ondergronden.
+        <strong>Beton cire</strong> is een type <a href="#">betonvloer</a> met
+        een unieke en natuurlijke uitstraling. Het is een dunne laag betonstuc
+        die ambachtelijk wordt aangebracht op verschillende ondergronden.
       </>
     ),
     images: [
@@ -43,15 +42,20 @@ const DetailLIst = [
   {
     id: "2",
     title: "Gietvloer beton",
-    desc1:
-      "Een Gietvloer beton is een kunststof vloer met een betonlook. Een gietvloer met betonlook is hygienisch, warm, makkelijk en kleurrijk.",
+    desc1: (
+      <>
+        Een <strong>Gietvloer beton</strong> is een kunststof vloer met een
+        betonlook. Een gietvloer met betonlook is hygienisch, warm, makkelijk en
+        kleurrijk.
+      </>
+    ),
     imageBig: "images/detail/2/1.jpg",
-    subtitle: "Wat is betoncire",
     desc2: (
       <>
         Een <strong>gietvloer beton</strong> is een vloer die vloeibaar over uw
-        ondergrond wordt gegoten om een
-        <a href="#">betonlook</a> te creeeren.
+        ondergrond wordt gegoten om een <a href="#">betonlook</a> te creeeren.
+        <br /> <br />U geniet bij een gietvloer beton van de look & feel van een
+        betonvloer, die toch warm en zacht aanvoelt aan uw voeten.
       </>
     ),
     images: ["images/detail/2/2.jpg", "images/detail/2/3.jpg"],
@@ -124,7 +128,7 @@ const DetailItem = ({ itemData, index }) => {
             {itemData?.adv.map((item, index) => {
               return (
                 <div className="detail__adv-item" key={index}>
-                  {checkSvg}
+                  <img src="images/icons/tick.png" alt="" />
                   {item}
                 </div>
               );

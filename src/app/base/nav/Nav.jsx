@@ -1,22 +1,35 @@
+"use client";
 import React from "react";
 import NavDropdown from "./NavDropdown";
-import { caretDown, chevronRight } from "../SVG";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-export default function Nav() {
+export default function Nav({ menu, close }) {
+  const pathname = usePathname();
   return (
-    <nav className="nav">
+    <nav className={"nav " + (menu ? "active" : "")} id="menu" onClick={close}>
       <div className="nav__inner">
         <NavDropdown title={"Betonvloeren"} />
         <NavDropdown title={"Betonvloeren afwerking"} />
         <a href="#" className="nav__inner-link">
           Betonvloeren prijs
         </a>
-        <a href="#" className="nav__inner-link">
+        <Link
+          href="photo"
+          className={
+            "nav__inner-link " + (pathname === "/photo" ? "active" : "")
+          }
+        >
           Foto’s
-        </a>
-        <a href="#" className="nav__inner-link">
+        </Link>
+        <Link
+          href="contact"
+          className={
+            "nav__inner-link " + (pathname === "/contact" ? "active" : "")
+          }
+        >
           Contact
-        </a>
+        </Link>
       </div>
     </nav>
   );

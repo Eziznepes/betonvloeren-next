@@ -45,9 +45,11 @@ export default function NavDropdown({ title }) {
     <div
       className={"nav__inner-dropdown " + (dropdown ? "active" : "")}
       ref={wrapper}
-      onClick={() => setDropdown(!dropdown)}
     >
-      <div className="nav__inner-dropdown-title">
+      <div
+        className="nav__inner-dropdown-title"
+        onClick={() => setDropdown(!dropdown)}
+      >
         {title}
         {caretDown}
       </div>

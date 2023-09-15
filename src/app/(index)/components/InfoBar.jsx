@@ -1,4 +1,5 @@
 import { checkSvg } from "@/app/base/SVG";
+import Link from "next/link";
 import React from "react";
 
 export default function InfoBar() {
@@ -8,11 +9,11 @@ export default function InfoBar() {
         <div className="infobar__inner">
           <div className="infobar__items">
             <div className="infobar__item">
-              {checkSvg}
+              <img src="images/icons/tick.png" alt="" />
               <h5>7000+ betonvloeren gestort</h5>
             </div>
             <div className="infobar__item">
-              {checkSvg}
+              <img src="images/icons/tick.png" alt="" />
               <h5>Beste prijs/kwaliteit betonvloer</h5>
             </div>
           </div>
@@ -31,6 +32,19 @@ export default function InfoBar() {
             </div>
             <div className="sponsor__item">
               <img src="images/sponsors/lg.png" alt="" />
+            </div>
+          </div>
+          <div className="infobar__row">
+            <div className="infobar__row-item">
+              <div className="infobar__row-item-title">email ons</div>
+              <img src="images/icons/mail.png" alt="" />
+            </div>
+            <Link href={"/offer"} className="button primary">
+              Offerte aanvragen
+            </Link>
+            <div className="infobar__row-item">
+              <div className="infobar__row-item-title">bel ons</div>
+              <img src="images/icons/phone-call-blue.png" alt="" />
             </div>
           </div>
         </div>
