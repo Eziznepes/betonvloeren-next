@@ -1,6 +1,9 @@
 import React from "react";
 import { mailSvg, phoneSvg } from "../base/SVG";
 import ButtonRow from "../(index)/components/wrapper/Content/components/ButtonRow";
+import verified from "@/public/images/icons/verified.png";
+import room from "@/public/images/room.jpg";
+import Image from "next/image";
 
 export default function ContentContact() {
   return (
@@ -8,7 +11,7 @@ export default function ContentContact() {
       <div className="content__contact">
         <div className="content__contact-box">
           <div className="content__contact-box-image">
-            <img src="images/icons/verified.png" alt="" />
+            <Image src={verified} alt={"verified"} />
           </div>
           <div className="content__contact-box-body">
             <h4 className="big">Betonvloeren.nl</h4>
@@ -49,7 +52,7 @@ export default function ContentContact() {
             genot van een kopje koffie leggen wij u graag de mogelijkheden uit.
           </p>
           <div className="content__contact-room-image">
-            <img src="images/room.jpg" alt="" />
+            <Image src={room} alt={"room"} />
           </div>
           <p className="uniq">
             Wij zijn <a href="#">geopend van ma t/m za</a> en op afspraak te

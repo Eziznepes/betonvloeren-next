@@ -1,10 +1,14 @@
+import Image from "next/image";
 import React from "react";
+import quality from "@/public/images/icons/quality.png";
+import service from "@/public/images/icons/service.png";
+import lifeInsurance from "@/public/images/icons/life-insurance.png";
 
 const ChooseList = [
   {
     id: "1",
     title: "Kwaliteit en service",
-    icon: "images/icons/quality.png",
+    icon: quality,
     desc: (
       <>
         Bij <strong>Betonvloeren.nl</strong> staan kwaliteit en service voorop.
@@ -16,7 +20,7 @@ const ChooseList = [
   {
     id: "2",
     title: "Ervaring en expertise",
-    icon: "images/icons/service.png",
+    icon: service,
     desc: (
       <>
         Bij <strong>Betonvloeren.nl</strong> staan kwaliteit en service voorop.
@@ -28,7 +32,7 @@ const ChooseList = [
   {
     id: "3",
     title: "Nazorg en garantie",
-    icon: "images/icons/life-insurance.png",
+    icon: lifeInsurance,
     desc: (
       <>
         Bij Betonvloer.nl laten wij u niet in de steek na de plaatsing van uw
@@ -67,7 +71,10 @@ const ChooseItem = ({ itemData }) => {
   return (
     <div className="content__choose-item">
       <div className="content__choose-item-icon">
-        <img src={itemData.icon} alt="" />
+        <Image
+          src={itemData.icon}
+          alt={"icon-" + itemData.id}
+        />
       </div>
       <div className="content__choose-item-content">
         <h3 className="sm">{itemData.title}</h3>

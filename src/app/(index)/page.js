@@ -13,7 +13,9 @@ import Leave from "../base/Modals/Leave";
 import ColorModal from "../base/Modals/ColorModal";
 import Difference from "./components/Difference";
 
-export default function Index() {
+
+
+export default function Page() {
   const [cookie, setCookie] = useState(true);
   const [leave, setLeave] = useState(true);
   const [colorModal, setColorModal] = useState(false);

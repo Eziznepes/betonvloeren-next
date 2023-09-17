@@ -1,4 +1,6 @@
 import React from "react";
+import offer from "@/public/images/offer.jpg";
+import Image from "next/image";
 
 export default function Offer() {
   return (
@@ -6,7 +8,7 @@ export default function Offer() {
       <div className="auto__container">
         <div className="offer__inner">
           <div className="offer__image">
-            <img src="images/offer.jpg" alt="" />
+            <Image src={offer} alt={"offer"} />
           </div>
           <div className="offer__form">
             <div className="offer__form-title">Vrijblijvende offerte</div>
@@ -15,6 +17,7 @@ export default function Offer() {
             </div>
             <div className="offer__form-iframe">
               <iframe
+                title="Betonvloeren"
                 id="advanced_iframe"
                 name="advanced_iframe"
                 src="//gietvloeren-offerte.nl/quotation-generator/index.php?thank-you=//www.gietvloeren-utrecht.nl/bedankt-offerte/"

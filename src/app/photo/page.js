@@ -1,10 +1,13 @@
 "use client";
 import Footer from "../base/Footer";
 import Header from "../base/Header";
-
 import Photo from "./Photo";
 
-export default function Index() {
+export const metadata = {
+  title: "About",
+};
+
+export default function Page() {
   return (
     <>
       <Header type="second" link={"Photo"} />

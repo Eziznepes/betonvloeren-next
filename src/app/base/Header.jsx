@@ -3,6 +3,11 @@ import { useEffect, useState } from "react";
 import { mailSvg, phoneSvg } from "./SVG";
 import Nav from "./nav/Nav";
 import Link from "next/link";
+import Image from "next/image";
+import stars from "@/public/images/stars.png";
+import logoImg from "@/public/images/logo.png";
+import logoWhite from "@/public/images/logo-white.png";
+import phoneCall from "@/public/images/icons/phone-call.png";
 
 export default function Header({ type, btn, link }) {
   const [menu, setMenu] = useState(false);
@@ -52,7 +57,7 @@ export default function Header({ type, btn, link }) {
                 Best beoordeelde betonvloeren specialist met{" "}
                 <a href="#">200+ reviews</a>!
               </div>
-              <img src="images/stars.png" alt="" />
+              <Image src={stars} alt={"stars"} />
             </div>
             <div className="headerTop__links">
               <a href="mailto:Info@betonvloeren.nl" className="headerTop__link">
@@ -76,17 +81,17 @@ export default function Header({ type, btn, link }) {
             ></div>
             <Link href="/" className="headerBot__inner-logo">
               {type === "second" ? (
-                <img src="images/logo.png" alt="" />
+                <Image src={logoImg} alt={"logo"} />
               ) : (
                 <>
                   {menu ? (
-                    <img src="images/logo.png" alt="" />
+                    <Image src={logoImg} alt={"logo"} />
                   ) : (
                     <>
                       {logo ? (
-                        <img src="images/logo.png" alt="" />
+                        <Image src={logoImg} alt={"logo"} />
                       ) : (
-                        <img src="images/logo-white.png" alt="" />
+                        <Image src={logoWhite} alt={"logoWhite"} />
                       )}
                     </>
                   )}
@@ -104,7 +109,7 @@ export default function Header({ type, btn, link }) {
             </div>
             {btn === "phone" ? (
               <a href="tel:020 - 370 91 51" className="headerBot__inner-btn">
-                <img src="images/icons/phone-call.png" alt="" />
+                <Image src={phoneCall} alt={"logo"} />
                 020 - 370 91 51
               </a>
             ) : (

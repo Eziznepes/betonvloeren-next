@@ -1,21 +1,25 @@
 import React from "react";
+import info1 from "@/public/images/info/1.png";
+import info2 from "@/public/images/info/2.png";
+import info3 from "@/public/images/info/3.png";
+import Image from "next/image";
 
 const infoList = [
   {
     id: "1",
     title: "Betonvloer",
-    image: "images/info/1.png",
+    image: info1,
     tag: "meest verkocht",
   },
   {
     id: "2",
     title: "Beton cire",
-    image: "images/info/2.png",
+    image: info2,
   },
   {
     id: "3",
     title: "Woonbeton",
-    image: "images/info/3.png",
+    image: info3,
   },
 ];
 
@@ -32,7 +36,7 @@ const InfoItem = ({ itemData }) => {
   return (
     <div className="wrap__content-info-item">
       <div className="wrap__content-info-item-image">
-        <img src={itemData.image} alt="" />
+        <Image src={itemData.image} alt={itemData.title} />
         <a href="#">
           <h4>
             Alles over <span>{itemData.title}</span>

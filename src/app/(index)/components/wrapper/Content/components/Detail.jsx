@@ -1,6 +1,14 @@
 import React from "react";
-import { checkSvg } from "@/app/base/SVG";
 import ButtonRow from "./ButtonRow";
+import detail1_1 from "@/public/images/detail/1/1.jpg";
+import detail1_2 from "@/public/images/detail/1/2.jpg";
+import detail1_3 from "@/public/images/detail/1/3.jpg";
+import detail1_4 from "@/public/images/detail/1/4.jpg";
+import detail2_1 from "@/public/images/detail/2/1.jpg";
+import detail2_2 from "@/public/images/detail/2/2.jpg";
+import detail2_3 from "@/public/images/detail/2/3.jpg";
+import tick from "@/public/images/icons/tick.png";
+import Image from "next/image";
 
 const DetailLIst = [
   {
@@ -9,7 +17,7 @@ const DetailLIst = [
     tag: "meest verkocht",
     desc1:
       "Beton ciré is een decoratieve coating die een betonlook geeft aan wanden en vloeren van uw woning of kantoor ruimte.",
-    imageBig: "images/detail/1/1.jpg",
+    imageBig: detail1_1,
     subtitle: "Wat is betoncire",
     desc2: (
       <>
@@ -18,11 +26,7 @@ const DetailLIst = [
         die ambachtelijk wordt aangebracht op verschillende ondergronden.
       </>
     ),
-    images: [
-      "images/detail/1/2.jpg",
-      "images/detail/1/3.jpg",
-      "images/detail/1/4.jpg",
-    ],
+    images: [detail1_2, detail1_3, detail1_4],
     desc3: (
       <>
         <span>Beton cire</span> is waterdicht, slijtvast, onderhoudsvriendelijk
@@ -49,7 +53,7 @@ const DetailLIst = [
         kleurrijk.
       </>
     ),
-    imageBig: "images/detail/2/1.jpg",
+    imageBig: detail2_1,
     desc2: (
       <>
         Een <strong>gietvloer beton</strong> is een vloer die vloeibaar over uw
@@ -58,7 +62,7 @@ const DetailLIst = [
         betonvloer, die toch warm en zacht aanvoelt aan uw voeten.
       </>
     ),
-    images: ["images/detail/2/2.jpg", "images/detail/2/3.jpg"],
+    images: [detail2_2, detail2_3],
     desc3: (
       <>
         Een gietvloer beton is niet hetzelfde als gietbeton, dat een massieve
@@ -98,7 +102,7 @@ const DetailItem = ({ itemData, index }) => {
       {itemData.desc1 && <p className="extra">{itemData.desc1}</p>}
 
       <div className="detail__image">
-        <img src={itemData.imageBig} alt="" />
+        <Image src={itemData.imageBig} alt={"imageBig"} />
       </div>
       {itemData.subtitle && <h3 className="sm">{itemData.subtitle}</h3>}
       {itemData.desc2 && <p className="extra">{itemData.desc2}</p>}
@@ -113,7 +117,7 @@ const DetailItem = ({ itemData, index }) => {
             return (
               <div className="detail__item" key={index}>
                 <div className="detail__item-image">
-                  <img src={item} alt="" />
+                  <Image src={item} alt={"image-" + index} />
                 </div>
               </div>
             );
@@ -128,7 +132,7 @@ const DetailItem = ({ itemData, index }) => {
             {itemData?.adv.map((item, index) => {
               return (
                 <div className="detail__adv-item" key={index}>
-                  <img src="images/icons/tick.png" alt="" />
+                  <Image src={tick} alt={"tick"} />
                   {item}
                 </div>
               );

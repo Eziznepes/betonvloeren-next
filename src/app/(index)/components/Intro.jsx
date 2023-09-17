@@ -1,11 +1,20 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import introBg from "@/public/images/introBg.jpg";
+import introScroll from "@/public/images/introScroll.png";
+import starsDark from "@/public/images/starsDark.png";
+import bill from "@/public/images/icons/bill.png";
+import imageGallery from "@/public/images/icons/image-gallery.png";
+import color1 from "@/public/images/colors/1.png";
+import latte from "@/public/images/latte.jpg";
+import paintPalette from "@/public/images/icons/paint-palette.png";
 
 export default function Intro({ setColorData, setColorModal }) {
   return (
     <section className="intro">
       <div className="intro__bg">
-        <img src="images/introBg.jpg" alt="" />
+        <Image src={introBg} alt="introBg" />
       </div>
       <div className="auto__container">
         <div className="intro__inner">
@@ -15,20 +24,20 @@ export default function Intro({ setColorData, setColorModal }) {
             en veelzijdige vloer
           </h1>
           <div className="intro__inner-scroll">
-            <img src="images/introScroll.png" alt="" />
+            <Image src={introScroll} alt="introScroll" />
           </div>
           <div className="promo">
             <div className="promo__text">
               <strong>Best beoordeelde</strong> betonvloeren specialist met{" "}
               <a href="#">200+ reviews</a>!
             </div>
-            <img src="images/starsDark.png" alt="" />
+            <Image src={starsDark} alt="starsDark" />
           </div>
           <div className="intro__links">
             <Link href={"offer"} className="intro__link-outer">
               <div className="intro__link">
                 <div className="intro__link-inner">
-                  <img src="images/icons/bill.png" alt="" />
+                  <Image src={bill} alt="bill" />
                 </div>
               </div>
               <div className="intro__link-title">Offerte aanvragen</div>
@@ -36,7 +45,7 @@ export default function Intro({ setColorData, setColorModal }) {
             <Link href={"photo"} className="intro__link-outer">
               <div className="intro__link">
                 <div className="intro__link-inner">
-                  <img src="images/icons/image-gallery.png" alt="" />
+                  <Image src={imageGallery} alt="imageGallery" />
                 </div>
               </div>
               <div className="intro__link-title">Betonvloer foto’s</div>
@@ -47,15 +56,15 @@ export default function Intro({ setColorData, setColorModal }) {
                 setColorModal(true);
                 setColorData({
                   id: "1",
-                  image: "images/colors/1.png",
-                  mainImage: "images/latte.jpg",
+                  image: color1,
+                  mainImage: latte,
                   title: "Space grey",
                 });
               }}
             >
               <div className="intro__link">
                 <div className="intro__link-inner">
-                  <img src="images/icons/paint-palette.png" alt="" />
+                  <Image src={paintPalette} alt="paintPalette" />
                 </div>
               </div>
               <div className="intro__link-title">Creeer uw vloer</div>

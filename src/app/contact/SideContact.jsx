@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { phoneSvg } from "@/app/base/SVG";
 import Link from "next/link";
 import Colors from "./Colors";
+import sideBox from "@/public/images/sideBox.jpg";
+import Image from "next/image";
 
 export default function SideContact({ setColorData, setColorModal }) {
   useEffect(() => {
@@ -29,7 +31,7 @@ export default function SideContact({ setColorData, setColorModal }) {
             <strong>Betonvloer foto’s</strong>
             Het gehele portfolio
           </Link>
-          <img src="images/sideBox.jpg" alt="" />
+          <Image src={sideBox} alt={"sideBox"} />
         </div>
         {/* <button type="button" className="button secondary">
           Download onze brochure

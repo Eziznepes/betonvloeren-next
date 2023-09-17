@@ -1,10 +1,15 @@
 import React from "react";
+import contactForm from "@/public/images/icons/contact-form.png";
+import quoteRequest from "@/public/images/icons/quote-request.png";
+import coffeeCup from "@/public/images/icons/coffee-cup.png";
+import wrapperElement from "@/public/images/wrapperElement.png";
+import Image from "next/image";
 
 const InterestedList = [
   {
     id: "1",
     title: "Vul het offerte formulier in",
-    icon: "images/icons/contact-form.png",
+    icon: contactForm,
     desc: (
       <>
         Om een offerte op maat te versturen hebben wij enkele gegevens van u
@@ -15,7 +20,7 @@ const InterestedList = [
   {
     id: "2",
     title: "Ontvang direct een offerte",
-    icon: "images/icons/quote-request.png",
+    icon: quoteRequest,
     desc: (
       <>
         Binnen 1 minuut ontvangt u van ons een offerte op maat voor uw project.
@@ -26,7 +31,7 @@ const InterestedList = [
   {
     id: "3",
     title: "Plan een afspraak",
-    icon: "images/icons/coffee-cup.png",
+    icon: coffeeCup,
     desc: (
       <>
         Indien gewenst plannen we samen een afspraak in op onze showroom onder
@@ -40,7 +45,7 @@ export default function Interested() {
   return (
     <section className="interested">
       <div className="interested__element">
-        <img src="images/wrapperElement.png" alt="" />
+        <Image src={wrapperElement} alt={"wrapperElement"} />
       </div>
       <div className="auto__container">
         <div className="interested__inner">
@@ -50,7 +55,9 @@ export default function Interested() {
           </div>
           <div className="interested__items">
             {InterestedList.map((item, index) => {
-              return <InterestedItem key={index} itemData={item} />;
+              return (
+                <InterestedItem key={index} itemData={item} index={index} />
+              );
             })}
           </div>
           <button className="button bluebt">
@@ -63,11 +70,11 @@ export default function Interested() {
   );
 }
 
-const InterestedItem = ({ itemData }) => {
+const InterestedItem = ({ itemData, index }) => {
   return (
     <div className="interested__item">
       <div className="interested__item-image">
-        <img src={itemData.icon} alt="" />
+        <Image src={itemData.icon} alt={"icon-" + index} />
       </div>
       <h3 className="sm">{itemData.title}</h3>
       <p className="extra">{itemData.desc}</p>
