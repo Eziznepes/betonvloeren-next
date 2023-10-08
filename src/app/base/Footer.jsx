@@ -8,12 +8,6 @@ import {
   tiktokIcon,
   twitterIcon,
 } from "./SVG";
-import footerLogo from "@/public/images/footer-logo.png";
-import footerLogo2 from "@/public/images/footer-logo2.png";
-import noa from "@/public/images/noa.png";
-import tba from "@/public/images/tba.png";
-import stars from "@/public/images/stars.png";
-import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -24,7 +18,7 @@ export default function Footer() {
             <div className="footerTop__inner">
               <div className="footerTop__left">
                 <Link href={"/"} className="footerTop__left-logo">
-                  <Image src={footerLogo} alt={"footerLogo"} />
+                  <img src="images/footer-logo.png" alt="" />
                 </Link>
                 <h5 className="sm">Betonvloeren.nl</h5>
                 <div className="footerTop__left-links">
@@ -100,10 +94,10 @@ export default function Footer() {
                   <h5 className="sm">Keurmerken</h5>
                   <div className="footerTop__right-col-images">
                     <div className="footerTop__right-col-image">
-                      <Image src={noa} alt={"noa"} />
+                      <img src="images/noa.png" alt="" />
                     </div>
                     <div className="footerTop__right-col-image">
-                      <Image src={tba} alt={"tba"} />
+                      <img src="images/tba.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -114,14 +108,14 @@ export default function Footer() {
                 Best beoordeelde betonvloeren specialist met{" "}
                 <a href="#">200+ reviews</a>!
               </div>
-              <Image src={stars} alt={"stars"} />
+              <img src="images/stars.png" alt="" />
             </div>
           </div>
           <div className="footerBot">
             <div className="footerBot__inner">
               <div className="footerBot__info">
                 <Link href={"/"} className="footerBot__logo">
-                  <Image src={footerLogo2} alt={"footerLogo2"} />
+                  <img src="images/footer-logo2.png" alt="" />
                 </Link>
                 <p>
                   Bekijk onze <a href="#"> privacy statement</a> en{" "}

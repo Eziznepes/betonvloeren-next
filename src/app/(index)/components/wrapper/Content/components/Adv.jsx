@@ -1,11 +1,7 @@
 import React from "react";
+import { checkSvg, phoneSvg } from "@/app/base/SVG";
 import ButtonRow from "./ButtonRow";
-import Image from "next/image";
-import tick from "@/public/images/icons/tick.png";
-import adv1 from "@/public/images/adv/1.jpg";
-import adv2 from "@/public/images/adv/2.jpg";
-import adv3 from "@/public/images/adv/3.jpg";
-import adv4 from "@/public/images/adv/4.jpg";
+
 const AdvList = [
   {
     id: "1",
@@ -16,7 +12,7 @@ const AdvList = [
         betonvloer kan jarenlang meegaan zonder te beschadigen of te vervormen.
       </>
     ),
-    image: adv1,
+    image: "images/adv/1.jpg",
   },
   {
     id: "2",
@@ -28,7 +24,7 @@ const AdvList = [
         kleurschakering.
       </>
     ),
-    image: adv2,
+    image: "images/adv/2.jpg",
   },
   {
     id: "3",
@@ -40,7 +36,7 @@ const AdvList = [
         nodig qua onderhoud.
       </>
     ),
-    image: adv3,
+    image: "images/adv/3.jpg",
   },
   {
     id: "4",
@@ -51,7 +47,7 @@ const AdvList = [
         waardoor ze de warmte beter vasthouden en energie besparen.
       </>
     ),
-    image: adv4,
+    image: "images/adv/4.jpg",
   },
 ];
 
@@ -60,7 +56,7 @@ export default function Adv() {
     <div className="content__adv">
       <div className="content__adv-title">
         <h2>De voordelen van betonvloeren</h2>
-        <Image src={tick} alt="tick" />
+        <img src="images/icons/tick.png" alt="" />
       </div>
       <p className="extra">
         Betonvloeren zijn naadloze, slijtvaste en duurzame vloeren met een
@@ -84,7 +80,7 @@ const AdvItem = ({ itemData }) => {
   return (
     <div className="content__adv-item">
       <div className="content__adv-item-image">
-        <Image src={itemData.image} alt={itemData.id} />
+        <img src={itemData.image} alt="" />
       </div>
       <h3 className="sm">{itemData.title}</h3>
       <p className="extra">{itemData.desc}</p>

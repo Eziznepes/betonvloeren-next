@@ -2,7 +2,6 @@ import React from "react";
 import Modal from "./Modal";
 import { cancel } from "../SVG";
 import { ColorsList } from "@/app/(index)/components/wrapper/Side/components/ColorsModul";
-import Image from "next/image";
 
 export default function ColorModal({ setColorModal, colorData, setColorData }) {
   return (
@@ -24,7 +23,7 @@ export default function ColorModal({ setColorModal, colorData, setColorData }) {
                 <p>Ontwerp uw eigen betonvloer</p>
               </div>
               <div className="modalColor__slider-item-image">
-                <Image src={colorData.mainImage} alt={colorData.title} />
+                <img src={colorData.mainImage} alt="" />
               </div>
             </div>
           </div>
@@ -40,7 +39,7 @@ export default function ColorModal({ setColorModal, colorData, setColorData }) {
                   onClick={() => setColorData(item)}
                 >
                   <div className="modalColor__nav-item-image">
-                    <Image src={item.image} alt={colorData.title} />
+                    <img src={item.image} alt="" />
                   </div>
                   <div className="modalColor__nav-item-title">{item.title}</div>
                 </div>

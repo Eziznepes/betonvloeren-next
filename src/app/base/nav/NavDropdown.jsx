@@ -1,13 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { caretDown, chevronRight } from "../SVG";
-import nav1 from "@/public/images/nav/1.jpg";
-import nav2 from "@/public/images/nav/2.jpg";
-import Image from "next/image";
 
 const NavList = [
   {
     id: "1",
-    image: nav1,
+    image: "images/nav/1.jpg",
     title: "Beton cire",
     desc: (
       <>
@@ -18,7 +15,7 @@ const NavList = [
   },
   {
     id: "2",
-    image: nav2,
+    image: "images/nav/2.jpg",
     title: "Gietvloer beton",
     desc: (
       <>
@@ -73,7 +70,7 @@ const DropdownItem = ({ itemData }) => {
       }
     >
       <div className="nav__inner-dropdown-item-image">
-        <Image src={itemData.image} alt={"nav-image"} />
+        <img src={itemData.image} alt="" />
       </div>
       <div className="nav__inner-dropdown-item-content">
         <div className="nav__inner-dropdown-item-content-title">

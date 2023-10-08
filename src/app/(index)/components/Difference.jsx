@@ -15,7 +15,6 @@ export default function Difference() {
           </div>
           <div className="difference__iframe">
             <iframe
-              title="betonvloeren offerte"
               id="advanced_iframe"
               name="advanced_iframe"
               src="//gietvloeren-offerte.nl/quotation-generator/index.php?thank-you=//www.gietvloeren-utrecht.nl/bedankt-offerte/"

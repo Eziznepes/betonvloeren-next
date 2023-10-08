@@ -3,8 +3,6 @@ import Side from "./Side/Side";
 import Content from "./Content/Content";
 import Content2 from "./Content/Content2";
 import SideContent from "./Side/SideContent";
-import wrapperElement from "@/public/images/wrapperElement.png";
-import Image from "next/image";
 
 export default function Wrapper({ setColorData, setColorModal }) {
   return (
@@ -19,7 +17,7 @@ export default function Wrapper({ setColorData, setColorModal }) {
       </section>
       <section className="wrapper" id="wrapper">
         <div className="wrapper__element">
-          <Image src={wrapperElement} alt={"wrapperElement"} />
+          <img src="images/wrapperElement.png" alt="" />
         </div>
         <div className="auto__container">
           <div className="wrapper__inner">

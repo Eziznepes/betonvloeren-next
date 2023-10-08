@@ -1,5 +1,10 @@
 import React from "react";
 import Info from "./components/Info";
+import ButtonRow from "./components/ButtonRow";
+import Type from "./components/Type";
+import Detail from "./components/Detail";
+import Adv from "./components/Adv";
+import Choose from "./components/Choose";
 
 export default function Content() {
   return (

@@ -1,16 +1,11 @@
 import React from "react";
 import ButtonRow from "./ButtonRow";
-import type1 from "@/public/images/type/1.png";
-import type2 from "@/public/images/type/2.png";
-import type3 from "@/public/images/type/3.png";
-import type4 from "@/public/images/type/4.png";
-import Image from "next/image";
 
 const typeList = [
-  { id: "1", title: "Beton cire", image: type1 },
-  { id: "1", title: "Betonlook", image: type2 },
-  { id: "1", title: "Woonbeton", image: type3 },
-  { id: "1", title: "Gietvloer beton", image: type4 },
+  { id: "1", title: "Beton cire", image: "images/type/1.png" },
+  { id: "1", title: "Betonlook", image: "images/type/2.png" },
+  { id: "1", title: "Woonbeton", image: "images/type/3.png" },
+  { id: "1", title: "Gietvloer beton", image: "images/type/4.png" },
 ];
 
 export default function Type() {
@@ -44,7 +39,7 @@ const TypeItem = ({ itemData }) => {
   return (
     <div className="content__type-item">
       <div className="content__type-item-image">
-      <Image src={itemData.image} alt={itemData.title} />
+        <img src={itemData.image} alt="" />
         <a href="#">
           <h6>{itemData.title}</h6>
         </a>

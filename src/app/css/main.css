@@ -2805,7 +2805,6 @@ body.active {
 }
 .content__choose-item-icon img {
   width: 100%;
-  height: unset;
 }
 .content__choose-item-content {
   width: calc(100% - 140px);

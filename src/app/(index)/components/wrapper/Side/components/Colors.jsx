@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { ColorsList } from "./ColorsModul";
-import Image from "next/image";
 
 export default function Colors({ setColorData, setColorModal }) {
   return (
@@ -33,7 +32,7 @@ const ColorItem = ({ itemData, onClick }) => {
   return (
     <div className="side__colors-item" onClick={onClick}>
       <div className="side__colors-item-image">
-        <Image src={itemData.image} alt={itemData.title} />
+        <img src={itemData.image} alt="" />
       </div>
     </div>
   );
